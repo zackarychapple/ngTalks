@@ -282,7 +282,7 @@
             "index": "apps/ionic-app/src/index.html",
             "main": "apps/ionic-app/src/main.ts",
             "polyfills": "apps/ionic-app/src/polyfills.ts",
-            "tsConfig": "apps/ionic-app/src/tsconfig.app.json",
+            "tsConfig": "apps/ionic-app/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
@@ -328,18 +328,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app:build"
+            "browserTarget": "ionic-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "app:build:production"
+              "browserTarget": "ionic-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "app:build"
+            "browserTarget": "ionic-app:build"
           }
         },
         "test": {
@@ -371,8 +371,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "apps/ionic-app/src/tsconfig.app.json",
-              "apps/ionic-app/src/tsconfig.spec.json"
+              "apps/ionic-app/tsconfig.app.json",
+              "apps/ionic-app/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -382,11 +382,11 @@
         "ionic-cordova-build": {
           "builder": "@ionic/ng-toolkit:cordova-build",
           "options": {
-            "browserTarget": "app:build"
+            "browserTarget": "ionic-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "app:build:production"
+              "browserTarget": "ionic-app:build:production"
             }
           }
         },
