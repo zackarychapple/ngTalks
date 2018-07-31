@@ -16,6 +16,9 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@ngTalksWorkspace/design-system": [
+        "libs/design-system/src/index.ts"
+      ]
     }
   },
   "exclude": [

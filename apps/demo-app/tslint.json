@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "ngTalksWorkspace",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "ngTalksWorkspace",
+      "kebab-case"
+    ]
+  }
+}
