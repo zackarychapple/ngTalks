@@ -11,5 +11,8 @@
   ],
   "include": [
     "**/*.ts"
-  ]
+  ],
+  "angularCompilerOption": {
+    "enableIvy": true
+  }
 }

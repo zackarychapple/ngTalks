@@ -1,8 +1,17 @@
-
+<ngt-router-outlet></ngt-router-outlet>
 <div style="text-align:center">
   <h1>Welcome to ngTalksWorkspace!</h1>
   <img width="300" src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png">
 </div>
+
+<button mat-button>Omg</button>
+
+<button ngt-button>This works</button>
+
+<br>
+
+<a [routerLink]="'second'">Second</a>
+<a [routerLink]="''">Home</a>
 
 <h2>This is an Angular CLI app built with Nrwl Nx!</h2>
 
@@ -13,8 +22,7 @@ Nx is designed to help you create and build enterprise grade Angular application
 <h2>Quick Start & Documentation</h2>
 
 <a href="https://nrwl.io/nx">Watch a 5-minute video on how to get started with Nx.</a>
-
-<mat-card class="example-card">
+<ngt-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>Shiba Inu</mat-card-title>
@@ -32,4 +40,23 @@ Nx is designed to help you create and build enterprise grade Angular application
     <button mat-button>LIKE</button>
     <button mat-button>SHARE</button>
   </mat-card-actions>
-</mat-card>
+</ngt-card>
+<!--<mat-card class="example-card">-->
+  <!--<mat-card-header>-->
+    <!--<div mat-card-avatar class="example-header-image"></div>-->
+    <!--<mat-card-title>Shiba Inu</mat-card-title>-->
+    <!--<mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+  <!--</mat-card-header>-->
+  <!--<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+  <!--<mat-card-content>-->
+    <!--<p>-->
+      <!--The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.-->
+      <!--A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally-->
+      <!--bred for hunting.-->
+    <!--</p>-->
+  <!--</mat-card-content>-->
+  <!--<mat-card-actions>-->
+    <!--<button mat-button>LIKE</button>-->
+    <!--<button mat-button>SHARE</button>-->
+  <!--</mat-card-actions>-->
+<!--</mat-card>-->
