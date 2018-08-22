@@ -8,14 +8,12 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {DesignSystemModule} from "../../../../libs/design-system/src";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {MatButtonModule} from "@angular/material";
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [DesignSystemModule, MatButtonModule, BrowserAnimationsModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserAnimationsModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,

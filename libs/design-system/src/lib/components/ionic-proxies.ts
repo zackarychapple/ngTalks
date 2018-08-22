@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, Directive, ViewEncapsulation} from "@angular/core";
 import {Card as IonCard, CardContent as IonCardContent} from '@ionic/angular'
-import {MatButton, MatCard, MatRipple} from "@angular/material";
+import {MatButton, MatCard} from "@angular/material";
 import {RouterOutlet} from "@angular/router";
 
 @Directive({
@@ -14,6 +14,16 @@ export class NgtCard extends IonCard {
   selector: 'ngt-card-content'
 })
 export class NgtCardContent extends IonCardContent {
+
+}
+
+@Component({
+  selector: `button[omg]`,
+  template: `
+    <div>OMG this is awesome<ng-template></ng-template></div>`,
+  styles: ['div{color:pink;}']
+})
+export class OmgtButton{
 
 }
 
